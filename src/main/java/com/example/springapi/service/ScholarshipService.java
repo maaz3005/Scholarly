@@ -8,23 +8,26 @@ import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.util.ArrayList;
 import java.util.List;
+// import org.springframework.beans.factory.annotation.Autowired;
+// import org.springframework.jdbc.core.JdbcTemplate;
+// import org.springframework.stereotype.Service;
 
 @Service
 public class ScholarshipService {
 
-
     private final MySQL mysql;
 
-    public ScholarshipService(){
+    public ScholarshipService() {
         String hostname = "vum.h.filess.io";
         String database = "CloudProject_entireloud";
         String port = "3307";
         String username = "CloudProject_entireloud";
         String password = "b83d7d1d1a974c5b70bcf0847ee8abfb7bf0f692";
 
-        mysql  = new MySQL(hostname, database, port, username, password);
+        mysql = new MySQL(hostname, database, port, username, password);
 
     }
+
     public List<Scholarship> getAllScholarships() throws SQLException, ClassNotFoundException {
         List<Scholarship> scholarships = new ArrayList<>();
         ResultSet resultSet;

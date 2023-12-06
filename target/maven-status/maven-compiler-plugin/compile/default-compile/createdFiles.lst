@@ -1,0 +1,5 @@
+com\example\springapi\service\MySQL.class
+com\example\springapi\SpringApiApplication.class
+com\example\springapi\api\controller\ScholarshipController.class
+com\example\springapi\api\model\Scholarship.class
+com\example\springapi\service\ScholarshipService.class

@@ -1,0 +1,117 @@
+@import url('../Home_Page/home.css');
+@import url('../Home_Page/style.css');
+
+/* Apply the font to the entire Scholarship Finder page */
+body {
+    font-family: 'Inter', sans-serif;
+}
+
+/* Scholarship Finder CSS */
+.scholarship-finder {
+    background-color: var(--dl-color-gray-white);
+    /* Assuming a light background */
+    padding: 2rem 0;
+}
+
+.scholarship-finder h1 {
+    color: #003EB3;
+    /* Primary color from your color scheme */
+    margin-bottom: 1rem;
+}
+
+.form-input {
+    border: 1px solid #d1d1d1;
+    padding: 0.5rem 1rem;
+    border-radius: 0.25rem;
+    width: 100%;
+}
+
+.btn-primary {
+    background-color: #0074F0;
+    /* Primary button color */
+    color: white;
+    padding: 0.75rem 1.5rem;
+    border: none;
+    border-radius: 0.25rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.btn-primary:hover {
+    background-color: #005ec2;
+    /* Darker shade for hover state */
+}
+
+.scholarship-item {
+    background-color: white;
+    border: 1px solid #e1e1e1;
+    border-radius: 0.5rem;
+    padding: 1rem;
+    margin-bottom: 1rem;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.scholarship-item h3 {
+    color: #333;
+    font-size: 1.25rem;
+    margin-bottom: 0.5rem;
+}
+
+.scholarship-item p {
+    color: #666;
+    margin-bottom: 0.5rem;
+}
+
+.scholarship-item a {
+    color: #0074F0;
+    text-decoration: none;
+}
+
+.scholarship-item a:hover {
+    text-decoration: underline;
+}
+
+.form-buttons {
+    display: flex;
+    justify-content: center;
+    /* Align buttons in the center */
+}
+
+.form-bottom-space {
+    margin-top: 2rem;
+    /* Adds space below the form */
+}
+
+/* Adjust the button margins as needed */
+.btn-primary {
+    margin-right: 1rem;
+    /* Space between buttons */
+}
+
+/* Remove the margin-right for the last button in the form */
+.btn-primary:last-child {
+    margin-right: 0;
+}
+
+#scholarshipSearchForm button {
+    margin-right: 10px;
+}
+
+#scholarshipSearchForm {
+    margin-bottom: 20px;
+}
+
+/* Add space between buttons in the scholarshipSearchForm */
+#scholarshipSearchForm .flex-wrap>div {
+    margin-bottom: 15px;
+    /* Adjust bottom margin for vertical spacing */
+    padding-right: 10px;
+    /* Adjust right padding for horizontal spacing */
+    padding-left: 10px;
+    /* Adjust left padding for horizontal spacing */
+}
+
+/* Ensure the last item in a row doesn't have right padding */
+#scholarshipSearchForm .flex-wrap>div:nth-child(3n) {
+    padding-right: 0;
+}
