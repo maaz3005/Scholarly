@@ -1,0 +1,68 @@
+/* Dashboard-specific styles */
+#saved-scholarships,
+#application-status,
+#recommendations {
+    margin: 20px;
+    padding: 15px;
+}
+
+#saved-scholarships h2,
+#application-status h2,
+#recommendations h2 {
+    color: #007bff;
+    margin-bottom: 10px;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    /* Aligns content to the top */
+    min-height: 100vh;
+    /* Full viewport height */
+    padding-top: 50px;
+    /* Adjust as needed to not stick to the top */
+}
+
+section {
+    width: 80%;
+    /* Adjust the width as needed */
+    max-width: 800px;
+    /* Set a max-width for larger screens */
+    margin-bottom: 30px;
+    /* Space between sections */
+}
+
+h2 {
+    background-color: #007bff;
+    /* Background color for the shape */
+    color: white;
+    /* Text color */
+    display: inline-block;
+    /* Wrap the background to the text */
+    padding: 10px 20px;
+    /* Padding around the text */
+    border-radius: 10px;
+    /* Rounded corners for the shape */
+    margin-top: 0;
+    /* Align the title to the top of the section */
+    position: relative;
+    /* Establishes a new stacking context */
+    z-index: 0;
+    /* Ensures that the heading is above the background */
+}
+
+
+/* Add a box-shadow for a card-like appearance */
+#saved-list,
+#status-list,
+#recommendations-list {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    /* Padding inside the cards */
+    background-color: white;
+    /* Card background color */
+    border-radius: 10px;
+    /* Match the border radius with the h2 */
+}
